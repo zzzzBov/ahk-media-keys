@@ -1,3 +1,8 @@
+; AHK Media Keys
+; By: zzzzBov
+;
+; MIT License (http://zzzzbov.mit-license.org/)
+
 ;
 ; Play Pause Skip
 ;
