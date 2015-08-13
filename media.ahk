@@ -7,27 +7,27 @@
 ; Play Pause Skip
 ;
 
-; Ctx + ← = Previous
+; Menu + ← = Previous
 AppsKey & Left::
     Send {Media_Prev}
 Return
 
-; Ctx + → = Next
+; Menu + → = Next
 AppsKey & Right::
     Send {Media_Next}
 Return
 
-; Ctx + ↑ = Play/Pause
+; Menu + ↑ = Play/Pause
 AppsKey & Up::
     Send {Media_Play_Pause}
 Return
 
-; Ctx + ↓ = Stop
+; Menu + ↓ = Stop
 AppsKey & Down::
     Send {Media_Stop}
 Return
 
-; Ctx + Pause = Play/Pause
+; Menu + Pause = Play/Pause
 AppsKey & Pause::
     Send {Media_Play_Pause}
 Return
@@ -36,9 +36,9 @@ Return
 ; Volume Up, Volume Down
 ;
 
-; Ctx + Page Up = Volume Up (2)
-; Ctx + Shift + Page Up = Volume Up (10)
-; Ctx + Ctrl + Page Up = Max Volume
+; Menu + Page Up = Volume Up (2)
+; Menu + Shift + Page Up = Volume Up (10)
+; Menu + Ctrl + Page Up = Max Volume
 AppsKey & PgUp::
     Send {Volume_Up}
 
@@ -56,9 +56,9 @@ AppsKey & PgUp::
     }
 Return
 
-; Ctx + Page Down = Volume Down (2)
-; Ctx + Shift + Page Down = Volume Down (10)
-; Ctx + Ctrl + Page Down = Min Volume
+; Menu + Page Down = Volume Down (2)
+; Menu + Shift + Page Down = Volume Down (10)
+; Menu + Ctrl + Page Down = Min Volume
 AppsKey & PgDn::
     if GetKeyState("ctrl")
     {
@@ -74,7 +74,7 @@ AppsKey & PgDn::
     }
 Return
 
-; Ctx + M = Mute
+; Menu + M = Mute
 AppsKey & m::
     Send {Volume_Mute}
 Return
