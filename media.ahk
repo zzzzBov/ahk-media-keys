@@ -40,8 +40,6 @@ Return
 ; Menu + Shift + Page Up = Volume Up (10)
 ; Menu + Ctrl + Page Up = Max Volume
 AppsKey & PgUp::
-    Send {Volume_Up}
-
     if GetKeyState("ctrl")
     {
         SoundSet, 100
